@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialNetwork.ui.controllers.UsersController">
+   <children>
+      <TextField fx:id="filterField" layoutX="399.0" layoutY="171.0" prefHeight="26.0" prefWidth="162.0" />
+      <Button layoutX="399.0" layoutY="230.0" mnemonicParsing="false" onAction="#sendRequest" text="Send Friend Request">
+         <font>
+            <Font name="Poor Richard" size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="12.0" minWidth="260.0" prefHeight="325.0" prefWidth="300.0" stylesheets="@../CSS/style.css" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="12.0" />
+      <Label layoutX="438.0" layoutY="137.0" text="Search Field">
+         <font>
+            <Font name="Poor Richard" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="351.0" prefHeight="34.0" prefWidth="300.0" spacing="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#prevPage" text="&lt;&lt;">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label fx:id="pageCounter" text="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#nextPage" text="&gt;&gt;">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

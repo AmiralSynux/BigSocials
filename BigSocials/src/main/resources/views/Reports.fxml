@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialNetwork.ui.controllers.ReportsController">
+   <children>
+      <VBox layoutX="154.0" layoutY="59.0" maxHeight="79.0" maxWidth="381.0" prefHeight="79.0" prefWidth="351.0" spacing="15.0" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="59.0">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="594.0" spacing="25.0">
+               <children>
+                  <Label text="Begin">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Poor Richard" size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="beginDateAC" prefHeight="26.0" prefWidth="100.0" />
+                  <Label layoutX="159.0" layoutY="10.0" text="End">
+                     <font>
+                        <Font name="Poor Richard" size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="endDateAC" prefHeight="26.0" prefWidth="100.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#activityReport" prefHeight="34.0" prefWidth="216.0" text="Generate Activity Report">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="153.0" layoutY="212.0" maxHeight="140.0" maxWidth="351.0" minWidth="342.0" prefHeight="140.0" prefWidth="351.0" spacing="15.0" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="212.0">
+         <children>
+            <HBox maxWidth="594.0" prefHeight="37.0" prefWidth="594.0" spacing="25.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="119.0" text="Friend's email">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Poor Richard" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="mailField" maxWidth="225.0" prefHeight="26.0" prefWidth="225.0">
+                     <contextMenu>
+                        <ContextMenu fx:id="contextMenu">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu></TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="594.0" spacing="25.0">
+               <children>
+                  <Label text="Begin">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Poor Richard" size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="beginDateIR" prefHeight="26.0" prefWidth="100.0" />
+                  <Label layoutX="159.0" layoutY="10.0" text="End">
+                     <font>
+                        <Font name="Poor Richard" size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="endDateIR" prefHeight="26.0" prefWidth="100.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#inboxReport" prefHeight="34.0" prefWidth="216.0" text="Generate Inbox Report">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Separator layoutX="12.0" layoutY="178.0" prefHeight="0.0" prefWidth="624.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="178.0" />
+   </children>
+</AnchorPane>

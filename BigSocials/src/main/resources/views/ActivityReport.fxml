@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1100.0" minWidth="1100.0" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialNetwork.ui.controllers.ActivityReportController">
+   <children>
+      <Label fx:id="totalFriends" layoutX="22.0" layoutY="32.0" text="FRIENDS" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="Poor Richard" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalMessages" layoutX="578.0" layoutY="32.0" prefHeight="18.0" prefWidth="312.0" text="MESSAGES" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="Poor Richard" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="221.0" layoutY="21.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+      <Separator layoutX="547.0" layoutY="26.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="548.6" AnchorPane.rightAnchor="545.0" AnchorPane.topAnchor="26.0" />
+      <Separator layoutY="29.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+      <MenuBar minWidth="1100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Export">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exportPDF" text="Export as PDF" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showFriendsInfo" text="Friends Chart" />
+                  <MenuItem mnemonicParsing="false" onAction="#showMessagesInfo" text="Messages Chart" />
+                  <MenuItem mnemonicParsing="false" onAction="#helpDate" text="Report Date" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="friendsListView" layoutX="22.0" layoutY="63.0" prefHeight="525.0" prefWidth="500.0" AnchorPane.bottomAnchor="11.399999999999977" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="63.0" />
+      <ListView fx:id="messagesListView" layoutX="575.0" layoutY="63.0" prefHeight="525.0" prefWidth="500.0" AnchorPane.bottomAnchor="11.399999999999977" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="63.0" />
+   </children>
+</AnchorPane>

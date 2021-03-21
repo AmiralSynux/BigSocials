@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.20047169811320756" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="850.0" prefHeight="475.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialNetwork.ui.controllers.UserInterfaceController">
+  <items>
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="175.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="38.0" layoutY="178.0" maxWidth="100.0" minWidth="100.0" prefHeight="155.0" prefWidth="100.0" spacing="20.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="37.19999999999999" AnchorPane.topAnchor="175.0">
+               <children>
+                  <Button fx:id="eventButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#eventPressed" prefHeight="24.0" prefWidth="100.0" stylesheets="@../CSS/style.css" text="Events">
+                     <font>
+                        <Font name="Poor Richard" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="usersButton" mnemonicParsing="false" onAction="#homePressed" prefHeight="24.0" prefWidth="100.0" stylesheets="@../CSS/style.css" text="Users">
+                     <font>
+                        <Font name="Poor Richard" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="mailButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#mailPressed" prefHeight="26.0" prefWidth="100.0" stylesheets="@../CSS/style.css" text="Mail">
+                     <font>
+                        <Font name="Poor Richard" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="reportButton" layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onAction="#reportPressed" prefHeight="26.0" prefWidth="100.0" stylesheets="@../CSS/style.css" text="Reports">
+                     <font>
+                        <Font name="Poor Richard" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="settingsButton" layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onAction="#settingsPressed" prefHeight="26.0" prefWidth="100.0" stylesheets="@../CSS/style.css" text="Settings">
+                     <font>
+                        <Font name="Poor Richard" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#LogOut" prefHeight="27.0" prefWidth="100.0" stylesheets="@../CSS/style.css" text="Log Out">
+                     <font>
+                        <Font name="Poor Richard" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="userDetails" alignment="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="150.0" prefWidth="150.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.799999999999983" AnchorPane.topAnchor="5.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0">
+         <children>
+            <TabPane fx:id="tabPane" layoutX="-1.0" prefHeight="470.0" prefWidth="526.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab text="Friends">
+                  <content>
+                    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" />
+                  </content>
+                </Tab>
+                <Tab text="Users">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                  <Tab text="Requests">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

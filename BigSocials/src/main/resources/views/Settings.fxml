@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialNetwork.ui.controllers.SettingsController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="255.0" fitWidth="255.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../pictures/icon_profile.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="232.0" layoutY="372.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="48.0" prefWidth="108.0" text="Update" AnchorPane.leftAnchor="232.0" AnchorPane.topAnchor="372.0">
+         <font>
+            <Font name="Poor Richard" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="77.0" layoutY="308.0" mnemonicParsing="false" onAction="#changePicture" text="Change picture" AnchorPane.leftAnchor="77.0" AnchorPane.topAnchor="308.0">
+         <font>
+            <Font name="Poor Richard" size="18.0" />
+         </font>
+      </Button>
+      <VBox layoutX="286.0" layoutY="14.0" prefHeight="358.0" prefWidth="295.0" spacing="10.0" AnchorPane.leftAnchor="286.00000000000006" AnchorPane.rightAnchor="18.80000000000001" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label text="First Name">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstName" prefHeight="26.0" prefWidth="218.0" />
+            <Label text="Last Name">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastName" prefHeight="26.0" prefWidth="218.0" />
+            <Label text="Email">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" prefHeight="26.0" prefWidth="218.0" />
+            <Label text="New Password">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newPassword" prefHeight="26.0" prefWidth="218.0" />
+            <Label text="Account Password">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="oldPassword" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

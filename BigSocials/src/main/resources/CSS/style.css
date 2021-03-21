@@ -1,0 +1,17 @@
+.table-row-cell:hover {
+    -fx-background-color: #d0baba;
+
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+}
+
+
+.list-cell:hover{
+    -fx-background-color: #d0baba;
+}
+
+.button:hover{
+    -fx-rotate: 3.5;
+}
